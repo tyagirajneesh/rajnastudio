@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajna Studio — Where Tradition Meets Elegance</title>
+<meta name="description" content="Handcrafted Indian ethnic wear. Custom-stitched Farshi suits made to your measurements. Ships to Thailand & India.">
+<meta property="og:title" content="Rajna Studio — Where Tradition Meets Elegance">
+<meta property="og:description" content="Handcrafted Farshi suits, custom-stitched to your measurements.">
+<meta property="og:image" content="images/collection-1.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --rose: #b76e79;
+  --rose-light: #d4a0a7;
+  --rose-pale: #f2dce0;
+  --gold: #c9a96e;
+  --cream: #fdf8f4;
+  --cream-dark: #f5ede4;
+  --text: #3d2c2c;
+  --text-mid: #6b5555;
+  --text-light: #9b8585;
+  --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--cream); }
+
+/* Navigation */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(253,248,244,0.95); backdrop-filter: blur(10px);
+  padding: 16px 28px; display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid rgba(183,110,121,0.1);
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.6rem;
+  font-weight: 600; color: var(--rose); letter-spacing: 4px; text-transform: uppercase;
+}
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a {
+  font-size: 0.78rem; color: var(--text-mid); text-decoration: none;
+  font-weight: 500; letter-spacing: 0.5px; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--rose); }
+.nav-cta {
+  background: var(--rose); color: #fff; padding: 8px 18px; border-radius: 6px;
+  font-size: 0.75rem; font-weight: 600; text-decoration: none; letter-spacing: 0.5px;
+  transition: all 0.2s;
+}
+.nav-cta:hover { background: #a35e68; transform: translateY(-1px); }
+
+/* Hero */
+.hero {
+  min-height: 100vh; display: flex; flex-direction: column; justify-content: center;
+  align-items: center; text-align: center; padding: 120px 24px 80px;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--white) 50%, var(--cream) 100%);
+}
+.hero-badge {
+  font-size: 0.68rem; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--rose); font-weight: 600; margin-bottom: 16px;
+  padding: 6px 16px; background: var(--rose-pale); border-radius: 20px;
+}
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 600; color: var(--text); line-height: 1.15; margin-bottom: 16px;
+}
+.hero h1 span { color: var(--rose); font-style: italic; }
+.hero-sub {
+  font-size: clamp(0.85rem, 2vw, 1rem); color: var(--text-mid);
+  max-width: 500px; line-height: 1.7; margin-bottom: 32px; font-weight: 300;
+}
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--rose); color: #fff; padding: 14px 32px; border-radius: 8px;
+  font-size: 0.88rem; font-weight: 600; text-decoration: none;
+  letter-spacing: 0.5px; transition: all 0.3s; box-shadow: 0 4px 20px rgba(183,110,121,0.3);
+}
+.hero-cta:hover { background: #a35e68; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(183,110,121,0.4); }
+.hero-features {
+  display: flex; gap: 32px; margin-top: 48px; flex-wrap: wrap; justify-content: center;
+}
+.hero-feature {
+  text-align: center; font-size: 0.72rem; color: var(--text-light); font-weight: 500;
+}
+.hero-feature span { display: block; font-size: 1.4rem; margin-bottom: 4px; }
+
+/* Section */
+section { padding: 80px 24px; }
+.section-title {
+  text-align: center; margin-bottom: 48px;
+}
+.section-title h2 {
+  font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 600; color: var(--text); margin-bottom: 8px;
+}
+.section-title p {
+  font-size: 0.85rem; color: var(--text-light); font-weight: 300; letter-spacing: 0.5px;
+}
+
+/* Collections Grid */
+.collections {
+  background: var(--white);
+}
+.collections-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px; max-width: 1100px; margin: 0 auto;
+}
+.collection-card {
+  border-radius: 16px; overflow: hidden; background: var(--cream);
+  border: 1px solid rgba(183,110,121,0.1); transition: all 0.4s;
+  cursor: pointer; position: relative;
+}
+.collection-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(183,110,121,0.15); }
+.collection-card img {
+  width: 100%; height: 380px; object-fit: cover; transition: transform 0.5s;
+}
+.collection-card:hover img { transform: scale(1.03); }
+.collection-card .card-body { padding: 20px; }
+.collection-card h3 {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+  color: var(--text); margin-bottom: 6px;
+}
+.collection-card p {
+  font-size: 0.75rem; color: var(--text-light); line-height: 1.5; margin-bottom: 12px;
+}
+.collection-card .price {
+  font-size: 0.82rem; font-weight: 700; color: var(--rose);
+}
+.card-badge {
+  position: absolute; top: 14px; left: 14px;
+  background: rgba(255,255,255,0.92); backdrop-filter: blur(4px);
+  padding: 4px 12px; border-radius: 20px; font-size: 0.65rem;
+  font-weight: 600; color: var(--rose); letter-spacing: 1px;
+}
+
+/* How It Works */
+.how-it-works { background: var(--cream); }
+.steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px; max-width: 900px; margin: 0 auto;
+}
+.step {
+  text-align: center; padding: 28px 20px; background: var(--white);
+  border-radius: 14px; border: 1px solid rgba(183,110,121,0.08);
+}
+.step-num {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--rose-pale);
+  color: var(--rose); font-weight: 700; font-size: 0.9rem;
+  display: inline-flex; align-items: center; justify-content: center; margin-bottom: 12px;
+}
+.step h4 { font-size: 0.85rem; margin-bottom: 6px; color: var(--text); }
+.step p { font-size: 0.72rem; color: var(--text-light); line-height: 1.5; }
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #3d2c2c 0%, #5a3d3d 100%);
+  text-align: center; padding: 80px 24px;
+}
+.cta-section h2 {
+  font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--cream); margin-bottom: 12px;
+}
+.cta-section p { color: var(--rose-light); font-size: 0.88rem; margin-bottom: 28px; font-weight: 300; }
+.cta-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #25D366; color: #fff; padding: 16px 36px; border-radius: 8px;
+  font-size: 0.92rem; font-weight: 600; text-decoration: none;
+  transition: all 0.3s; box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+}
+.cta-btn:hover { background: #1fb855; transform: translateY(-2px); }
+.cta-btn svg { width: 22px; height: 22px; fill: currentColor; }
+
+/* Footer */
+footer {
+  background: var(--text); padding: 40px 24px; text-align: center;
+}
+footer .brand {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.4rem;
+  color: var(--rose-light); letter-spacing: 4px; margin-bottom: 6px;
+}
+footer .tagline { font-size: 0.68rem; color: var(--text-light); letter-spacing: 2px; margin-bottom: 20px; }
+footer .socials { display: flex; gap: 16px; justify-content: center; margin-bottom: 20px; }
+footer .socials a {
+  color: var(--rose-light); text-decoration: none; font-size: 0.78rem; font-weight: 500;
+  transition: color 0.2s;
+}
+footer .socials a:hover { color: #fff; }
+footer .copy { font-size: 0.65rem; color: var(--text-light); }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hero { padding: 100px 20px 60px; }
+  .hero-features { gap: 20px; }
+  .collection-card img { height: 300px; }
+  section { padding: 60px 20px; }
+}
+
+/* WhatsApp Float */
+.wa-float {
+  position: fixed; bottom: 24px; right: 24px; z-index: 99;
+  background: #25D366; width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.3s;
+  text-decoration: none;
+}
+.wa-float:hover { transform: scale(1.1); }
+.wa-float svg { width: 28px; height: 28px; fill: #fff; }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-brand">Rajna</div>
+  <div class="nav-links">
+    <a href="#collections">Collections</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="https://www.instagram.com/rajnastudio/" target="_blank">📸 Instagram</a>
+    <a href="#order" class="nav-cta">Order Now</a>
+  </div>
+</nav>
+
+<!-- Collections First -->
+<section class="collections" id="collections" style="padding-top:100px;">
+  <div class="section-title">
+    <h2>Our Collections</h2>
+    <p>Each piece tells a story of tradition and elegance</p>
+  </div>
+  <div class="collections-grid">
+    <div class="collection-card" onclick="orderCollection('Collection 1 - Plum Farshi')">
+      <div class="card-badge">BESTSELLER</div>
+      <img src="images/collection-1.jpeg" alt="Collection 1 - Plum Farshi Suit">
+      <div class="card-body">
+        <h3>Plum Farshi Suit</h3>
+        <p>Magenta lace-up kurta with flowy sleeves & matching farshi salwar</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 2 - Green Block Print')">
+      <img src="images/collection-2.jpeg" alt="Collection 2 - Green Block Print">
+      <div class="card-body">
+        <h3>Green Block Print Farshi</h3>
+        <p>Block print kurta with olive farshi salwar & matching dupatta</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 3 - Red & Navy')">
+      <div class="card-badge">NEW</div>
+      <img src="images/collection-3.jpeg" alt="Collection 3 - Red & Navy">
+      <div class="card-body">
+        <h3>Red & Navy Farshi</h3>
+        <p>Red plain kurta with navy floral farshi salwar & black dupatta</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 4 - Pink & Lavender')">
+      <div class="card-badge">NEW</div>
+      <img src="images/collection-4.jpeg" alt="Collection 4 - Pink & Lavender">
+      <div class="card-body">
+        <h3>Pink & Lavender Farshi</h3>
+        <p>Pink bell-sleeve kurta with lavender embroidered farshi & purple dupatta</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hero / Brand Story -->
+<section class="hero" style="min-height:auto;padding:80px 24px;">
+  <div class="hero-badge">✨ Est. 2026 • India</div>
+  <h1>Where Tradition<br>Meets <span>Elegance</span></h1>
+  <p class="hero-sub">Handcrafted Indian ethnic wear, custom-stitched to your measurements. Farshi suits designed with love, shipped to Thailand & India.</p>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
+    <a href="https://wa.me/918130600134?text=Hi%20Rajna%20Studio!%20I%20want%20to%20order%20🙏" class="hero-cta">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.4 0-4.636-.837-6.397-2.232l-.364-.293-2.637.884.884-2.637-.293-.364A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+      Order on WhatsApp
+    </a>
+    <a href="https://ig.me/m/rajnastudio" class="hero-cta" style="background:#E1306C;box-shadow:0 4px 20px rgba(225,48,108,0.3);" target="_blank">
+      📸 DM on Instagram
+    </a>
+    <a href="https://www.tiktok.com/@rajnastudio" class="hero-cta" style="background:#000;box-shadow:0 4px 20px rgba(0,0,0,0.2);" target="_blank">
+      🎵 TikTok
+    </a>
+  </div>
+  <div class="hero-features">
+    <div class="hero-feature"><span>📐</span>Custom Fit</div>
+    <div class="hero-feature"><span>✂️</span>Handcrafted</div>
+    <div class="hero-feature"><span>🇹🇭🇮🇳</span>Ships Worldwide</div>
+    <div class="hero-feature"><span>💕</span>Made with Love</div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works" id="how-it-works">
+  <div class="section-title">
+    <h2>How It Works</h2>
+    <p>From your message to your doorstep</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Choose Your Design</h4>
+      <p>Pick a collection you love from our catalogue</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Share Measurements</h4>
+      <p>Send us your bust, waist, hip & height on WhatsApp</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>We Stitch & Ship</h4>
+      <p>Handcrafted in 7-10 days, delivered to your door</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="order">
+  <h2>Ready to Order?</h2>
+  <p>Message us on WhatsApp — we'll take care of the rest ✨</p>
+  <a href="https://wa.me/918130600134?text=Hi%20Rajna%20Studio!%20I%20want%20to%20order%20🙏" class="cta-btn">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.4 0-4.636-.837-6.397-2.232l-.364-.293-2.637.884.884-2.637-.293-.364A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+    Message Us on WhatsApp
+  </a>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="brand">RAJNA STUDIO</div>
+  <div class="tagline">WHERE TRADITION MEETS ELEGANCE</div>
+  <div class="socials">
+    <a href="https://www.instagram.com/rajnastudio/" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@rajnastudio" target="_blank">TikTok</a>
+    <a href="https://wa.me/918130600134" target="_blank">WhatsApp</a>
+  </div>
+  <div class="copy">© 2026 Rajna Studio. Handcrafted in India with love 💕</div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/918130600134?text=Hi%20Rajna%20Studio!%20I%20want%20to%20order%20🙏" class="wa-float" target="_blank">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.4 0-4.636-.837-6.397-2.232l-.364-.293-2.637.884.884-2.637-.293-.364A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+
+<script>
+function orderCollection(name) {
+  const msg = encodeURIComponent(`Hi Rajna Studio! 🙏 I'd like to order: ${name}`);
+  window.open(`https://wa.me/918130600134?text=${msg}`, '_blank');
+}
+</script>
+</body>
+</html>
