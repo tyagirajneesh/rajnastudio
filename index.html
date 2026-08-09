@@ -218,6 +218,7 @@ footer .copy { font-size: 0.65rem; color: var(--text-light); }
   <div class="nav-brand">Rajna</div>
   <div class="nav-links">
     <a href="#collections">Collections</a>
+    <a href="#size-chart">Size Chart</a>
     <a href="#how-it-works">How It Works</a>
     <a href="https://www.instagram.com/rajnastudio/" target="_blank">📸 Instagram</a>
     <a href="#order" class="nav-cta">Order Now</a>
@@ -240,11 +241,12 @@ footer .copy { font-size: 0.65rem; color: var(--text-light); }
         <div class="price">From ฿2,000 / ₹4,200</div>
       </div>
     </div>
-    <div class="collection-card" onclick="orderCollection('Collection 2 - Green Block Print')">
-      <img src="collection-2.jpeg" alt="Collection 2 - Green Block Print">
+    <div class="collection-card" onclick="showVariants('2')">
+      <div class="card-badge">3 Styles</div>
+      <img src="collection-2.jpeg" alt="Collection 2">
       <div class="card-body">
-        <h3>Green Block Print Farshi</h3>
-        <p>Block print kurta with olive farshi salwar & matching dupatta</p>
+        <h3>Collection 2</h3>
+        <p>Available in multiple variants</p>
         <div class="price">From ฿2,000 / ₹4,200</div>
       </div>
     </div>
@@ -257,12 +259,84 @@ footer .copy { font-size: 0.65rem; color: var(--text-light); }
         <div class="price">From ฿2,000 / ₹4,200</div>
       </div>
     </div>
-    <div class="collection-card" onclick="orderCollection('Collection 4 - Pink & Lavender')">
-      <div class="card-badge">NEW</div>
-      <img src="collection-4.jpeg" alt="Collection 4 - Pink & Lavender">
+    <div class="collection-card" onclick="showVariants('4')">
+      <div class="card-badge">NEW • 5 Styles</div>
+      <img src="collection-4.jpeg" alt="Collection 4">
       <div class="card-body">
-        <h3>Pink & Lavender Farshi</h3>
-        <p>Pink bell-sleeve kurta with lavender embroidered farshi & purple dupatta</p>
+        <h3>Collection 4</h3>
+        <p>Available in multiple color variants</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 5')">
+      <div class="card-badge">NEW</div>
+      <img src="collection-5.jpg" alt="Collection 5">
+      <div class="card-body">
+        <h3>Collection 5</h3>
+        <p>Exclusive designer farshi set</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 6')">
+      <div class="card-badge">NEW</div>
+      <img src="collection-6.jpg" alt="Collection 6">
+      <div class="card-body">
+        <h3>Collection 6</h3>
+        <p>Exclusive designer farshi set</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 7')">
+      <div class="card-badge">NEW</div>
+      <img src="collection-7.jpg" alt="Collection 7">
+      <div class="card-body">
+        <h3>Collection 7</h3>
+        <p>Exclusive designer farshi set</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="showVariants('8')">
+      <div class="card-badge">NEW • 3 Colors</div>
+      <img src="collection-8A.jpg" alt="Collection 8">
+      <div class="card-body">
+        <h3>Collection 8</h3>
+        <p>Available in Purple, Yellow & Pink</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 9')">
+      <div class="card-badge">NEW</div>
+      <img src="collection-9.jpg" alt="Collection 9">
+      <div class="card-body">
+        <h3>Collection 9</h3>
+        <p>Exclusive designer farshi set</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 10')">
+      <div class="card-badge">NEW</div>
+      <img src="collection-10.jpg" alt="Collection 10">
+      <div class="card-body">
+        <h3>Collection 10</h3>
+        <p>Exclusive designer farshi set</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 12')">
+      <div class="card-badge">NEW</div>
+      <img src="collection-12.jpeg" alt="Collection 12">
+      <div class="card-body">
+        <h3>Collection 12</h3>
+        <p>Exclusive designer farshi set</p>
+        <div class="price">From ฿2,000 / ₹4,200</div>
+      </div>
+    </div>
+    <div class="collection-card" onclick="orderCollection('Collection 13')">
+      <div class="card-badge">NEW</div>
+      <img src="collection-13.jpeg" alt="Collection 13">
+      <div class="card-body">
+        <h3>Collection 13</h3>
+        <p>Exclusive designer farshi set</p>
         <div class="price">From ฿2,000 / ₹4,200</div>
       </div>
     </div>
@@ -295,6 +369,91 @@ footer .copy { font-size: 0.65rem; color: var(--text-light); }
 </section>
 
 <!-- How It Works -->
+<!-- Size Chart -->
+<section id="size-chart" style="padding:80px 24px;background:var(--white);">
+  <div class="section-title">
+    <h2>📐 Size Chart</h2>
+    <p>Find your perfect fit — just tell us your size!</p>
+  </div>
+
+  <div style="max-width:1000px;margin:0 auto;">
+    <!-- Tab Buttons -->
+    <div style="display:flex;gap:8px;justify-content:center;margin-bottom:24px;">
+      <button onclick="showSizeChart('india')" id="btn-india" style="padding:10px 24px;border:2px solid #F59E0B;background:#FEF3C7;color:#92400e;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;">🇮🇳 India</button>
+      <button onclick="showSizeChart('thai')" id="btn-thai" style="padding:10px 24px;border:2px solid #ddd;background:#fff;color:#666;border-radius:8px;font-weight:700;font-size:0.85rem;cursor:pointer;">🇹🇭 Thailand</button>
+    </div>
+
+    <!-- India Chart -->
+    <div id="chart-india" style="overflow-x:auto;">
+      <p style="text-align:center;font-size:0.75rem;color:var(--text-light);margin-bottom:12px;">Measurements in inches. "To Fit" = your body measurement. "Garment" = actual suit measurement (includes ease).</p>
+      <table style="width:100%;border-collapse:collapse;font-size:0.78rem;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <thead>
+          <tr style="background:#3d2c2c;color:#fff;">
+            <th style="padding:10px 8px;">Brand Size</th>
+            <th style="padding:10px 8px;">Size</th>
+            <th style="padding:10px 8px;">Shoulder</th>
+            <th style="padding:10px 8px;">Bust</th>
+            <th style="padding:10px 8px;">Kurti Length</th>
+            <th style="padding:10px 8px;">Waist</th>
+            <th style="padding:10px 8px;">Salwar Length</th>
+            <th style="padding:10px 8px;background:#b76e79;">To Fit Bust</th>
+            <th style="padding:10px 8px;background:#b76e79;">To Fit Hip</th>
+            <th style="padding:10px 8px;background:#b76e79;">To Fit Waist</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">32</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">S</td><td style="padding:8px;text-align:center;">14.0</td><td style="padding:8px;text-align:center;">32</td><td style="padding:8px;text-align:center;">33</td><td style="padding:8px;text-align:center;">28</td><td style="padding:8px;text-align:center;">39</td><td style="padding:8px;text-align:center;background:#FDF2F8;">32</td><td style="padding:8px;text-align:center;background:#FDF2F8;">36</td><td style="padding:8px;text-align:center;background:#FDF2F8;">28</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">34</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">M</td><td style="padding:8px;text-align:center;">14.5</td><td style="padding:8px;text-align:center;">34</td><td style="padding:8px;text-align:center;">34</td><td style="padding:8px;text-align:center;">30</td><td style="padding:8px;text-align:center;">39</td><td style="padding:8px;text-align:center;background:#FDF2F8;">34</td><td style="padding:8px;text-align:center;background:#FDF2F8;">38</td><td style="padding:8px;text-align:center;background:#FDF2F8;">30</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">36</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">L</td><td style="padding:8px;text-align:center;">15.0</td><td style="padding:8px;text-align:center;">36</td><td style="padding:8px;text-align:center;">34</td><td style="padding:8px;text-align:center;">32</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">36</td><td style="padding:8px;text-align:center;background:#FDF2F8;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">32</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">38</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">XL</td><td style="padding:8px;text-align:center;">15.5</td><td style="padding:8px;text-align:center;">38</td><td style="padding:8px;text-align:center;">35</td><td style="padding:8px;text-align:center;">34</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">38</td><td style="padding:8px;text-align:center;background:#FDF2F8;">42</td><td style="padding:8px;text-align:center;background:#FDF2F8;">34</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">40</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">XXL</td><td style="padding:8px;text-align:center;">16.0</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;">35</td><td style="padding:8px;text-align:center;">36</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">44</td><td style="padding:8px;text-align:center;background:#FDF2F8;">36</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">42</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">3XL</td><td style="padding:8px;text-align:center;">16.5</td><td style="padding:8px;text-align:center;">42</td><td style="padding:8px;text-align:center;">36</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;">41</td><td style="padding:8px;text-align:center;background:#FDF2F8;">42</td><td style="padding:8px;text-align:center;background:#FDF2F8;">47</td><td style="padding:8px;text-align:center;background:#FDF2F8;">40</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">44</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">4XL</td><td style="padding:8px;text-align:center;">17.0</td><td style="padding:8px;text-align:center;">44</td><td style="padding:8px;text-align:center;">36</td><td style="padding:8px;text-align:center;">42</td><td style="padding:8px;text-align:center;">41</td><td style="padding:8px;text-align:center;background:#FDF2F8;">44</td><td style="padding:8px;text-align:center;background:#FDF2F8;">48</td><td style="padding:8px;text-align:center;background:#FDF2F8;">42</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">46</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">5XL</td><td style="padding:8px;text-align:center;">17.5</td><td style="padding:8px;text-align:center;">46</td><td style="padding:8px;text-align:center;">37</td><td style="padding:8px;text-align:center;">44</td><td style="padding:8px;text-align:center;">41</td><td style="padding:8px;text-align:center;background:#FDF2F8;">46</td><td style="padding:8px;text-align:center;background:#FDF2F8;">50</td><td style="padding:8px;text-align:center;background:#FDF2F8;">44</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">48</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">6XL</td><td style="padding:8px;text-align:center;">18.0</td><td style="padding:8px;text-align:center;">48</td><td style="padding:8px;text-align:center;">37</td><td style="padding:8px;text-align:center;">46</td><td style="padding:8px;text-align:center;">42</td><td style="padding:8px;text-align:center;background:#FDF2F8;">48</td><td style="padding:8px;text-align:center;background:#FDF2F8;">52</td><td style="padding:8px;text-align:center;background:#FDF2F8;">46</td></tr>
+          <tr><td style="padding:8px;text-align:center;font-weight:700;">50</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">7XL</td><td style="padding:8px;text-align:center;">18.5</td><td style="padding:8px;text-align:center;">50</td><td style="padding:8px;text-align:center;">38</td><td style="padding:8px;text-align:center;">48</td><td style="padding:8px;text-align:center;">42</td><td style="padding:8px;text-align:center;background:#FDF2F8;">50</td><td style="padding:8px;text-align:center;background:#FDF2F8;">54</td><td style="padding:8px;text-align:center;background:#FDF2F8;">48</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Thai Chart -->
+    <div id="chart-thai" style="overflow-x:auto;display:none;">
+      <p style="text-align:center;font-size:0.75rem;color:var(--text-light);margin-bottom:12px;">หน่วยเป็นนิ้ว + ซม. | "พอดีตัว" = ไซส์ตัวคุณ</p>
+      <table style="width:100%;border-collapse:collapse;font-size:0.78rem;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+        <thead>
+          <tr style="background:#3d2c2c;color:#fff;">
+            <th style="padding:10px 8px;">ไซส์</th>
+            <th style="padding:10px 8px;">Size</th>
+            <th style="padding:10px 8px;">ไหล่</th>
+            <th style="padding:10px 8px;">อก</th>
+            <th style="padding:10px 8px;background:#E67E22;">อก(ซม.)</th>
+            <th style="padding:10px 8px;">ยาวเสื้อ</th>
+            <th style="padding:10px 8px;">เอว</th>
+            <th style="padding:10px 8px;">ยาวกางเกง</th>
+            <th style="padding:10px 8px;background:#b76e79;">พอดีอก</th>
+            <th style="padding:10px 8px;background:#b76e79;">พอดีสะโพก</th>
+            <th style="padding:10px 8px;background:#b76e79;">พอดีเอว</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">32</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">S</td><td style="padding:8px;text-align:center;">13.5</td><td style="padding:8px;text-align:center;">32</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">81</td><td style="padding:8px;text-align:center;">32</td><td style="padding:8px;text-align:center;">26</td><td style="padding:8px;text-align:center;">37</td><td style="padding:8px;text-align:center;background:#FDF2F8;">32</td><td style="padding:8px;text-align:center;background:#FDF2F8;">35</td><td style="padding:8px;text-align:center;background:#FDF2F8;">26</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">34</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">M</td><td style="padding:8px;text-align:center;">14.0</td><td style="padding:8px;text-align:center;">34</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">86</td><td style="padding:8px;text-align:center;">33</td><td style="padding:8px;text-align:center;">28</td><td style="padding:8px;text-align:center;">37</td><td style="padding:8px;text-align:center;background:#FDF2F8;">34</td><td style="padding:8px;text-align:center;background:#FDF2F8;">37</td><td style="padding:8px;text-align:center;background:#FDF2F8;">28</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">36</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">L</td><td style="padding:8px;text-align:center;">14.5</td><td style="padding:8px;text-align:center;">36</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">91</td><td style="padding:8px;text-align:center;">33</td><td style="padding:8px;text-align:center;">30</td><td style="padding:8px;text-align:center;">38</td><td style="padding:8px;text-align:center;background:#FDF2F8;">36</td><td style="padding:8px;text-align:center;background:#FDF2F8;">39</td><td style="padding:8px;text-align:center;background:#FDF2F8;">30</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">38</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">XL</td><td style="padding:8px;text-align:center;">15.0</td><td style="padding:8px;text-align:center;">38</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">96</td><td style="padding:8px;text-align:center;">34</td><td style="padding:8px;text-align:center;">32</td><td style="padding:8px;text-align:center;">38</td><td style="padding:8px;text-align:center;background:#FDF2F8;">38</td><td style="padding:8px;text-align:center;background:#FDF2F8;">41</td><td style="padding:8px;text-align:center;background:#FDF2F8;">32</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">40</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">XXL</td><td style="padding:8px;text-align:center;">15.5</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">101</td><td style="padding:8px;text-align:center;">34</td><td style="padding:8px;text-align:center;">34</td><td style="padding:8px;text-align:center;">39</td><td style="padding:8px;text-align:center;background:#FDF2F8;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">43</td><td style="padding:8px;text-align:center;background:#FDF2F8;">34</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">42</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">3XL</td><td style="padding:8px;text-align:center;">16.0</td><td style="padding:8px;text-align:center;">42</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">106</td><td style="padding:8px;text-align:center;">35</td><td style="padding:8px;text-align:center;">36</td><td style="padding:8px;text-align:center;">39</td><td style="padding:8px;text-align:center;background:#FDF2F8;">42</td><td style="padding:8px;text-align:center;background:#FDF2F8;">45</td><td style="padding:8px;text-align:center;background:#FDF2F8;">36</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">44</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">4XL</td><td style="padding:8px;text-align:center;">16.5</td><td style="padding:8px;text-align:center;">44</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">111</td><td style="padding:8px;text-align:center;">35</td><td style="padding:8px;text-align:center;">38</td><td style="padding:8px;text-align:center;">39</td><td style="padding:8px;text-align:center;background:#FDF2F8;">44</td><td style="padding:8px;text-align:center;background:#FDF2F8;">47</td><td style="padding:8px;text-align:center;background:#FDF2F8;">38</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">46</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">5XL</td><td style="padding:8px;text-align:center;">17.0</td><td style="padding:8px;text-align:center;">46</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">116</td><td style="padding:8px;text-align:center;">36</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">46</td><td style="padding:8px;text-align:center;background:#FDF2F8;">50</td><td style="padding:8px;text-align:center;background:#FDF2F8;">40</td></tr>
+          <tr style="border-bottom:1px solid #f3f3f3;"><td style="padding:8px;text-align:center;font-weight:700;">48</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">6XL</td><td style="padding:8px;text-align:center;">17.5</td><td style="padding:8px;text-align:center;">48</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">121</td><td style="padding:8px;text-align:center;">36</td><td style="padding:8px;text-align:center;">42</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">48</td><td style="padding:8px;text-align:center;background:#FDF2F8;">52</td><td style="padding:8px;text-align:center;background:#FDF2F8;">42</td></tr>
+          <tr><td style="padding:8px;text-align:center;font-weight:700;">50</td><td style="padding:8px;text-align:center;font-weight:700;color:#b76e79;">7XL</td><td style="padding:8px;text-align:center;">18.0</td><td style="padding:8px;text-align:center;">50</td><td style="padding:8px;text-align:center;background:#FEF3C7;font-weight:700;">127</td><td style="padding:8px;text-align:center;">37</td><td style="padding:8px;text-align:center;">44</td><td style="padding:8px;text-align:center;">40</td><td style="padding:8px;text-align:center;background:#FDF2F8;">50</td><td style="padding:8px;text-align:center;background:#FDF2F8;">54</td><td style="padding:8px;text-align:center;background:#FDF2F8;">44</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="text-align:center;margin-top:16px;font-size:0.75rem;color:var(--text-light);">💡 Just measure your bust and tell us the number — we'll handle the rest!</p>
+  </div>
+</section>
+
 <section class="how-it-works" id="how-it-works">
   <div class="section-title">
     <h2>How It Works</h2>
@@ -347,10 +506,82 @@ footer .copy { font-size: 0.65rem; color: var(--text-light); }
 </a>
 
 <script>
+// Variant data for collections with multiple options
+const variants = {
+  '2': {
+    title: 'Collection 2 — Choose Your Style',
+    options: [
+      { name: 'Collection 2 - Green Block Print', img: 'collection-2.jpeg', label: 'Green Block Print' },
+      { name: 'Collection 2A - Green', img: 'collection-2a.jpg', label: '2A - Green' },
+      { name: 'Collection 2A - Grey', img: 'collection-2a.jpg', label: '2A - Grey' },
+      { name: 'Collection 2B', img: 'collection-2b.jpg', label: '2B' }
+    ]
+  },
+  '4': {
+    title: 'Collection 4 — Choose Your Style',
+    options: [
+      { name: 'Collection 4 - Pink & Lavender', img: 'collection-4.jpeg', label: 'Pink & Lavender' },
+      { name: 'Collection 4A - Orange/Blue', img: 'collection-4a.jpg', label: 'Orange / Blue' },
+      { name: 'Collection 4B - Rani/Dark Green', img: 'collection-4b.jpg', label: 'Rani / Dark Green' },
+      { name: 'Collection 4C - Pink/Green', img: 'collection-4c.jpg', label: 'Pink / Green' },
+      { name: 'Collection 4D - Pink/White Flower', img: 'collection-4d.jpg', label: 'Pink / White Flower' }
+    ]
+  },
+  '8': {
+    title: 'Collection 8 — Choose Your Color',
+    options: [
+      { name: 'Collection 8A - Purple', img: 'collection-8A.jpg', label: 'Purple' },
+      { name: 'Collection 8B - Yellow', img: 'collection-8B.jpg', label: 'Yellow' },
+      { name: 'Collection 8C - Pink', img: 'collection-8C.jpg', label: 'Pink' }
+    ]
+  }
+};
+
 function orderCollection(name) {
   const msg = encodeURIComponent(`Hi Rajna Studio! 🙏 I'd like to order: ${name}`);
   window.open(`https://wa.me/918130600134?text=${msg}`, '_blank');
 }
+
+function showVariants(collectionId) {
+  const data = variants[collectionId];
+  if (!data) return;
+  let html = `<h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;text-align:center;margin-bottom:20px;color:var(--text);">${data.title}</h3>`;
+  html += `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">`;
+  data.options.forEach(opt => {
+    html += `<div style="background:var(--cream);border-radius:12px;overflow:hidden;border:1px solid rgba(183,110,121,0.2);cursor:pointer;transition:all 0.3s;" onclick="orderCollection('${opt.name}');closeVariants();" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 30px rgba(183,110,121,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <img src="${opt.img}" alt="${opt.label}" style="width:100%;height:250px;object-fit:cover;">
+      <div style="padding:14px;text-align:center;">
+        <div style="font-weight:600;font-size:0.9rem;color:var(--text);">${opt.label}</div>
+        <div style="font-size:0.75rem;color:var(--text-light);margin-top:4px;">Tap to order →</div>
+      </div>
+    </div>`;
+  });
+  html += `</div>`;
+  document.getElementById('variantContent').innerHTML = html;
+  document.getElementById('variantModal').style.display = 'flex';
+}
+
+function closeVariants() {
+  document.getElementById('variantModal').style.display = 'none';
+}
+
+function showSizeChart(type) {
+  document.getElementById('chart-india').style.display = type === 'india' ? 'block' : 'none';
+  document.getElementById('chart-thai').style.display = type === 'thai' ? 'block' : 'none';
+  document.getElementById('btn-india').style.background = type === 'india' ? '#FEF3C7' : '#fff';
+  document.getElementById('btn-india').style.borderColor = type === 'india' ? '#F59E0B' : '#ddd';
+  document.getElementById('btn-india').style.color = type === 'india' ? '#92400e' : '#666';
+  document.getElementById('btn-thai').style.background = type === 'thai' ? '#FEF3C7' : '#fff';
+  document.getElementById('btn-thai').style.borderColor = type === 'thai' ? '#F59E0B' : '#ddd';
+  document.getElementById('btn-thai').style.color = type === 'thai' ? '#92400e' : '#666';
+}
 </script>
+
+<!-- Variant Modal -->
+<div id="variantModal" onclick="if(event.target===this)closeVariants()" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);z-index:9999;justify-content:center;align-items:center;padding:20px;">
+  <div id="variantContent" style="background:#fff;border-radius:16px;padding:28px;max-width:750px;width:90%;max-height:90vh;overflow-y:auto;position:relative;">
+  </div>
+</div>
+
 </body>
 </html>
